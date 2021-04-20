@@ -4,4 +4,6 @@ public class Calculadora{
 		return numero1 * numero2;
 	}
 
+	// Modificar para agregar suma, resta y division de números reales
+
 }
