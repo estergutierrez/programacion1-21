@@ -1,6 +1,11 @@
 import javax.swing.JOptionPane;
 
 public class Interfaz {
+
+	public String solicitarUnaHilera(String titulo){
+		String hilera = JOptionPane.showInputDialog(titulo);
+		return hilera;
+	}
 	
 	public int solicitarNumeroEntero(String titulo){
 		String numeroHilera = JOptionPane.showInputDialog(titulo);
