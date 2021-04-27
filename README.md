@@ -151,26 +151,22 @@ Ejemplos vistos en clase:
 
 Sobrecarga de métodos (clase Calculadora.java)
 ```java
-public int sumar(int valor1, int valor2){
-   return valor1 + valor2;
-}
+	public double multiplicar(double valor1, double valor2){
+		double resultado = valor2 * valor1;
+		return resultado;
+	}
 
-public int sumar(int valor1, int valor2, int valor3){
-   return valor1 + valor2 + valor3;
-}
+	public int multiplicar(int valor1, int valor2){
+		return valor1*valor2;
+	}
 
-public double sumar(double v1, double v2){
-   double resultado = v1+ v2;
-   return resultado;
-}
+	public double multiplicar(double valor1, int valor2){
+		return valor1*valor2;
+	}
 
-public double sumar(int v1, double v2){
-   return v1 + v2;
-}
-
-public double sumar(double v1, int v2){
-   return v1 + v2;
-}
+	public double multiplicar(int valor1, int valor2, int valor3){
+		return valor1*valor2*valor3;
+	}
 ```
 
 Sobrecarga de constructores (clase Carta.java)
