@@ -21,6 +21,17 @@ public class Calculadora{
 		return valor1*valor2*valor3;
 	}
 
+	public double convertirDeCmAPlg(double cm){
+		return cm / 2.54;
+	}
+
+	
+	public double convertirDeKgALb(double kg){
+		double lb = kg * 2.204623;
+		return lb;
+	}
+
+
 
 	// Modificar para agregar suma, resta y division de números reales
 
