@@ -38,6 +38,7 @@ public class Automovil {
 		velocidadActual = (int) (velocidadActual + aceleracion * tiempo); // truncar (NO redondea)
 	}
 
+	//							1.9876,            0.58473
 	public void acelerar(double aceleracion, double tiempo){
 		this.aceleracion = this.aceleracion + aceleracion;
 		this.tiempo = this.tiempo + tiempo;

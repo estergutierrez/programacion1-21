@@ -6,6 +6,10 @@ public class Interfaz {
 		String hilera = JOptionPane.showInputDialog(titulo);
 		return hilera;
 	}
+
+	public void mostrarMensaje(String contenido){
+		JOptionPane.showMessageDialog(null, contenido );
+	}
 	
 	public int solicitarNumeroEntero(String titulo){
 		String numeroHilera = JOptionPane.showInputDialog(titulo);
