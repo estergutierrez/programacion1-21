@@ -36,4 +36,5 @@ public class EstructurasRepeticion{
 		instanciaRepeticion.imprimirFor();
 	}
 	
+	
 }

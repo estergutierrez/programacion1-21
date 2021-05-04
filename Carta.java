@@ -30,8 +30,29 @@ public class Carta {
 		return palo;
 	}
 
+	public String convertirNumero(){
+		String dato= "";
+		switch(this.numero){
+			case 11:
+				dato = "J";
+			break;
+			case 12:
+				dato = "Q";
+			break;
+			case 13:
+				dato = "K";
+			break;
+			case 1:
+				dato = "As";
+			break;
+			default:
+				dato += numero;
+		}
+		return dato;
+	}
+
 	public String retornarDatos(){
-		String datos = "La carta es: " + numero + " de " + palo;
+		String datos = "La carta es: " + convertirNumero() + " de " + palo;
 		return datos;
 	}
 
