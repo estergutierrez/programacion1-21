@@ -59,6 +59,20 @@ public class AlgoritmosOrdenamiento{
 		return copia;
 	}
 
+	public int [] ordernarInsercion(int [] arreglo){
+		int [] copia = clonar(arreglo);
+		for (int i = 1; i < copia.length; i++){
+			int valor = copia[i];
+			int contador = i-1;
+			while(contador >= 0 && copia[contador] > valor){
+				copia[contador+1] = copia[contador];
+				contador--;
+			}
+			copia[contador+1] = valor;
+		}
+		return copia;
+	}
+
 	public static void main (String [] args){
 		int [] arreglo = {1,4,2,7,9,0,6,10,11,200,-2,-4};
 		AlgoritmosOrdenamiento ao = new AlgoritmosOrdenamiento();
@@ -73,7 +87,9 @@ public class AlgoritmosOrdenamiento{
 		ao.imprimir(arreglo);
 		ao.imprimir(arregloOrdenadoBurbuja);
 
+		System.out.println("Despues de ordenar por inserción:");
+		int [] arregloOrdenadoInsercion = ao.ordernarInsercion(arreglo);
+		ao.imprimir(arreglo);
+		ao.imprimir(arregloOrdenadoInsercion);
 	}
-
-
 }
