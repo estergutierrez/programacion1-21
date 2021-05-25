@@ -12,10 +12,7 @@ public class PracticaMatrices{
 
 	public int [][] sumarMatrices(int [][] matrizA, int [][] matrizB){
 		int [][] resultado = null;
-		if(esRectangular(matrizA) && esRectangular(matrizB) &&
-		   matrizA.length == matrizB.length && 
-		   matrizA[0].length == matrizB[0].length){
-
+		if(esRectangular(matrizA) && esRectangular(matrizB) && matrizA.length == matrizB.length && matrizA[0].length == matrizB[0].length){
 			resultado = new int [matrizA.length][matrizA[0].length];
 			for(int f = 0; f < resultado.length; f++){
 				for(int c = 0; c < resultado[f].length; c++){
