@@ -21,7 +21,7 @@ public class CartaDoxygen
 	 *
 	 *Se utiliza para instanciar el objeto y asignarle el número y palo
 	  \param numero número entero entre 1 y 13.
-      \param palo hilera de caracteres con el nombre del palo.
+    \param palo hilera de caracteres con el nombre del palo.
 	 */
 	public CartaDoxygen(int numero, String palo){
 		this.numero = numero;
