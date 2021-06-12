@@ -6,6 +6,10 @@ public class EscritorDeArchivos{
 	private boolean abierto;
 
 	public EscritorDeArchivos(String ruta, boolean agregarAlFinal){
+		abrir(ruta, agregarAlFinal);
+	}
+
+	public void abrir(String ruta, boolean agregarAlFinal){
 		try{
 			this.escritor = new BufferedWriter(new FileWriter(ruta, agregarAlFinal)); // agregarAlFinal
 			this.abierto = true;
@@ -16,7 +20,6 @@ public class EscritorDeArchivos{
 		}
 	}
 
-	// Crear un método para abrir un archivo
 
 	// Cerrar
 	public void cerrar(){
@@ -53,6 +56,9 @@ public class EscritorDeArchivos{
 		escritor.escribir("Costa Rica, San José, Montes De Oca\n");
 		escritor.escribir("Costa Rica, Atenas, Atenas\n");
 		escritor.escribir("Costa Rica, Heredia, Belén\n");
+		escritor.cerrar();
+		escritor.abrir("otroArchivo.txt", true);
+		escritor.escribir("Este es mi otro archivo");
 		escritor.cerrar();
 	}
 }
